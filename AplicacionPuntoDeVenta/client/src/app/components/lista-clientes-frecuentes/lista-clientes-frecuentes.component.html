@@ -1,0 +1,32 @@
+<div class="navbar">
+    <a [routerLink]="['/login']"><i class="fas fa-sign-in-alt"></i> Inicio de sesión</a>
+    <a [routerLink]="['/principal']"><i class="fas fa-home"></i> Página principal</a>
+    <a [routerLink]="['/clientesfrecuentes']"><i class="fas fa-users"></i> Clientes frecuentes</a>
+    <a [routerLink]="['/pedidosaproveedor']"><i class="fas fa-shopping-cart"></i> Pedidos</a>
+    <a [routerLink]="['/proveedores']"><i class="fas fa-truck"></i> Proveedores</a>
+    <a [routerLink]="['/entregasproveedor']"><i class="fas fa-shipping-fast"></i> Entregas</a>
+    <a [routerLink]="['/inventarios']"><i class="fas fa-boxes"></i> Inventarios</a>
+    <a [routerLink]="['/cortedecaja']"><i class="fas fa-cash-register"></i> Corte Caja</a>
+    <a [routerLink]="['/reportes']"><i class="fas fa-chart-line"></i> Informes</a>
+  </div>
+  <div class="flecha">
+    <a routerLink="/clientesfrecuentes" class="back-icon">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+  </div>
+<h1 class="list-h1-mod">Lista de Clientes Frecuentes</h1>
+    <table class="client-list-mod" id="client-list">
+        <thead>
+            <tr>
+                <th>Clave</th>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Teléfono</th>
+                <th>Frecuencia</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    

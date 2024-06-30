@@ -1,0 +1,98 @@
+<div class="sales-content">
+    <div class="sales-title">Ventas</div>
+    <div class="sales-table-content">
+        <div class="sales-barcode">
+            <div class="barcode-icon">
+                <i class="fas fa-barcode"></i>
+            </div>
+            <input type="text" placeholder="Código de barras">
+        </div>
+        <div class="sales-table-container">
+            <table class="sales-table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>IVA</th>
+                        <th>Precio</th>
+                        <th>%Desc</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Producto A</td>
+                        <td>2</td>
+                        <td>16%</td>
+                        <td>$100.00</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Producto B</td>
+                        <td>1</td>
+                        <td>16%</td>
+                        <td>$50.00</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Producto C</td>
+                        <td>3</td>
+                        <td>16%</td>
+                        <td>$150.00</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="sales-totals">
+        <div class="totals-left">
+            <div class="totals-subtotal">
+                <label>Subtotal:</label>
+                <span>$300.00</span>
+            </div>
+            <div class="totals-total">
+                <label>Total de venta:</label>
+                <span>$336.00</span>
+            </div>
+            <div class="totals-amount">
+                <label>Cantidad:</label>
+                <span>6</span>
+            </div>
+        </div>
+        <div class="totals-right">
+            <div class="totals-received">
+                <label>Recibido:</label>
+                <input type="text" placeholder="Monto recibido">
+            </div>
+            <div class="totals-change">
+                <label>Cambio:</label>
+                <span>$0.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="sales-buttons">
+        <button id="payButton">Pagar</button>
+        <button>%Desc</button>
+        <select id="paymentMethod">
+            <option>Cambiar Forma de pago</option>
+            <option>Tarjeta de Crédito</option>
+            <option>Tarjeta de Débito</option>
+        </select>
+        <!-- Botón Generar ticket añadido -->
+        <button id="generateTicketButton">Generar Ticket</button>
+    </div>
+    <div class="sales-bottom-buttons">
+        <button routerLink="/menu">Menú</button>
+        <button routerLink="/notificacion"><i class="fas fa-bell"></i></button>
+    </div>
+    <!-- Modal or Section for Ticket -->
+    <div id="ticketSection" style="display:none;">
+        <h2>Ticket de Compra</h2>
+        <p id="ticketDetails"></p>
+    </div>
+</div>
+
