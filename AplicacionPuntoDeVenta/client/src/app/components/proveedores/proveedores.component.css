@@ -1,40 +1,48 @@
+/* Estilos para la barra de navegación */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9173cc;
+    background-color: #9173cc; /* Color de fondo */
     padding: 10px;
-    position: fixed;
+    position: fixed; /* Fijar la barra en la parte superior */
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
 .navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Margen entre enlaces */
+    font-size: 1.2em; /* Tamaño de fuente */
     display: flex;
-    align-items: center;
+    align-items: center; /* Alinear verticalmente */
 }
 
 .navbar a:hover {
-    color: #d4c1f3;
+    color: #d4c1f3; /* Color al pasar el ratón */
 }
 
 .navbar i {
-    margin-right: 8px;
+    margin-right: 8px; /* Espaciado a la derecha del icono */
 }
-.flecha{
-    margin-top: 90px;
-    font-size: 24px;
-  color: #000;
-  text-decoration: none;
-  margin-left: 30px;
-}
-/*  Estilos para la Tabla (si se usa en algún lugar*/
 
+/* Estilos para el icono de flecha de regreso */
+.flecha {
+    margin-top: 60px; /* Ajustar espacio superior para evitar la superposición */
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #000; /* Color del icono */
+    text-decoration: none; /* Sin subrayado */
+    margin-left: 30px; /* Espaciado a la izquierda */
+}
+
+.flecha a {
+    display: flex;
+    align-items: center; /* Alinear verticalmente el icono y el enlace */
+}
+
+/* Estilos para la tabla */
 table {
     width: 100%; /* La tabla ocupa todo el ancho disponible */
     border-collapse: collapse; /* Quita los espacios entre las celdas */
@@ -42,7 +50,6 @@ table {
 }
 
 table, th, td {
-    
     border: 1px solid #da95d0; /* Bordes ligeros para la tabla y celdas */
 }
 
@@ -51,15 +58,13 @@ th, td {
     text-align: left; /* Texto alineado a la izquierda */
 }
 
-/* Estilo para las cabeceras de la tabla */
 th {
     background-color: #5b3d99; /* Fondo púrpura oscuro */
     color: rgb(198, 150, 212); /* Color de texto */
 }
 
-/* Estilo para las celdas de la tabla */
 td {
-    background-color: #993f3f; /* Fondo gris claro */
+    background-color: #993f3f; /* Fondo para celdas */
 }
 
 /* Estilo para botones dentro de las celdas */
@@ -74,28 +79,24 @@ td button {
     transition: background-color 0.3s; /* Transición suave del color de fondo */
 }
 
-/* Cambia el color del botón al pasar el ratón */
 td button:hover {
-    background-color: #48257f; /* Fondo púrpura más oscuro */
+    background-color: #48257f; /* Fondo púrpura más oscuro al pasar el ratón */
 }
 
-/*Estilos para el Contenedor de Proveedores */
-
-/* Contenedor principal para el formulario de proveedores */
+/* Estilos para el contenedor del proveedor */
 .provider-container {
-    margin-top: 70px; /* Espacio superior para evitar la superposición con la barra de navegación */
-    margin-bottom: 20px;
-    padding: 80px; /* Relleno interno */
-    background-color: #c39aca; /* Fondo blanco */
+    margin-top: 80px; /* Espacio superior para evitar la superposición con la barra de navegación */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding: 40px; /* Relleno interno */
+    background-color: #c39aca; /* Fondo */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     border-radius: 10px; /* Bordes redondeados */
     width: 400px; /* Ancho del contenedor */
-    max-width: 80%; /* Ancho máximo del 90% del viewport */
-    height: 90%;
+    max-width: 80%; /* Ancho máximo del 80% del viewport */
     text-align: center; /* Centrar el texto dentro del contenedor */
 }
 
-/* Estilo para los campos del formulario */
+/* Estilo para el formulario dentro del contenedor del proveedor */
 .provider-container form {
     margin-top: 20px;
     display: flex; /* Flexbox para alinear los elementos del formulario */
@@ -114,7 +115,7 @@ td button:hover {
     padding: 8px; /* Relleno interno */
     border: 1px solid #ccc; /* Borde gris claro */
     border-radius: 4px; /* Bordes redondeados */
-    width: calc(100% - 16px); /* Ancho del campo de entrada */
+    width: calc(100% - 16px); /* Ancho del campo de entrada menos el relleno */
 }
 
 /* Estilo para los botones dentro del formulario */
@@ -123,18 +124,17 @@ td button:hover {
 }
 
 .provider-container form .form-button-container button {
-    background-color: #977dcb; /* Fondo púrpura oscuro */
-    border: none; /* Sin bordes */
-    color: #ffffff; /* Texto blanco */
-    padding: 10px 50px; /* Relleno interno */
-    border-radius: 20px; /* Bordes redondeados */
-    cursor: pointer; /* Muestra un cursor de mano */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    width: 100%;
+    padding: 20px;
+    background-color: #5b3d99;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
 }
-
-/* Cambia el color del botón al pasar el ratón */
 .provider-container form .form-button-container button:hover {
-    background-color: #48257f; /* Fondo púrpura más oscuro */
+    background-color: #48257f; /* Fondo púrpura más oscuro al pasar el ratón */
 }
 
 /* Estilo para el contenedor de opciones del proveedor */
@@ -148,16 +148,14 @@ td button:hover {
     background-color: #977dcb; /* Fondo púrpura oscuro */
     border: none; /* Sin bordes */
     color: #fff; /* Texto blanco */
-    padding: 10px 20px; /* Relleno interno */
+    padding: 20px 25px; /* Relleno interno */
     border-radius: 20px; /* Bordes redondeados */
     cursor: pointer; /* Muestra un cursor de mano */
-    margin-top: 20px; /* Espacio superior */
+    margin-top: 25px; /* Espacio superior */
     transition: background-color 0.3s; /* Transición suave del color de fondo */
-    margin-right: 20px;
-
+    margin-right: 20px; /* Espaciado derecho */
 }
 
-/* Cambia el color del botón al pasar el ratón */
 .provider-options .provider-option-btn:hover {
-    background-color: #48257f; /* Fondo púrpura más oscuro */
+    background-color: #48257f; /* Fondo púrpura más oscuro al pasar el ratón */
 }

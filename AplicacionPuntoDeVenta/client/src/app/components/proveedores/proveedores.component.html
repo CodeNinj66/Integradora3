@@ -9,31 +9,28 @@
     <a [routerLink]="['/cortedecaja']"><i class="fas fa-cash-register"></i> Corte Caja</a>
     <a [routerLink]="['/reportes']"><i class="fas fa-chart-line"></i> Informes</a>
 </div>
+
 <div class="flecha">
     <a routerLink="/menu" class="back-icon">
-      <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-left"></i>
     </a>
-  </div>
+</div>
+
 <div class="provider-container">
-    <h1>Registrar Proveedores</h1>
+    <h1><i class="fas fa-plus-circle"></i> Registrar Proveedor</h1>
+
     <form>
-        <label for="nombreProveedor">Nombre del Proveedor</label>
-        <input type="text" id="nombreProveedor" name="nombreProveedor" required>
-        
-        <label for="idProveedor">ID Proveedor</label>
-        <input type="text" id="idProveedor" name="idProveedor" required>
-        
-        <label for="telefonoProveedor">Teléfono del Proveedor</label>
-        <input type="text" id="telefonoProveedor" name="telefonoProveedor" required>
-        
-        <label for="direccionProveedor">Dirección del Proveedor</label>
-        <input type="text" id="direccionProveedor" name="direccionProveedor" required>
-        
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Id Proveedor" required>
+        <input type="text" placeholder="Producto" required>
+        <input type="text" placeholder="Empresa" required>
+
         <div class="form-button-container">
-            <button type="button">Registrar</button>
+            <button type="submit">Confirmar Registro</button>
+        
         </div>
     </form>
-    
+
     <div class="provider-options">
         <button class="provider-option-btn" onclick="location.href='editarprovedor'">Editar Proveedor</button>
         <button class="provider-option-btn" onclick="location.href='eliminarproveedor'">Eliminar Proveedor</button>
